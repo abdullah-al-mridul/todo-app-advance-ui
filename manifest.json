@@ -1,0 +1,23 @@
+{
+  "name": "টিকট্যাক - Todo App",
+  "short_name": "টিকট্যাক",
+  "description": "A beautiful Bengali todo app to manage your daily tasks",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0F",
+  "theme_color": "#8B5CF6",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "lang": "bn",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "iarc_rating_id": ""
+}

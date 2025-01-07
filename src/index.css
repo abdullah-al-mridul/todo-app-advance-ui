@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  user-select: none !important;
+}
+*:not(.pi) {
+  font-family: "Noto Sans Bengali", serif !important;
+}
+/* Webkit Browsers (Chrome, Safari, newer versions of Opera) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #13131a;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d2d3d;
+  border-radius: 5px;
+  border: 2px solid #13131a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b5cf6;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2d2d3d #13131a;
+}
+
+/* For Edge */
+*::-ms-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-ms-scrollbar-track {
+  background: #13131a;
+  border-radius: 5px;
+}
+
+*::-ms-scrollbar-thumb {
+  background: #2d2d3d;
+  border-radius: 5px;
+  border: 2px solid #13131a;
+}
+
+*::-ms-scrollbar-thumb:hover {
+  background: #8b5cf6;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera when not in use */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin 3s linear infinite;
+}
+
+:root {
+  --vw: 100vw;
+  --vh: 100vh;
+  --app-height: 100vh;
+  --app-width: 100vw;
+}
+
+/* Update relevant classes */
+.min-h-screen {
+  min-height: var(--app-height);
+}
+
+.h-screen {
+  height: var(--app-height);
+}
+
+.w-screen {
+  width: var(--app-width);
+}
+
+/* Add utility classes for the new variables */
+.h-app {
+  height: var(--app-height);
+}
+
+.min-h-app {
+  min-height: var(--app-height);
+}
+
+.w-app {
+  width: var(--app-width);
+}
+
+.min-w-app {
+  min-width: var(--app-width);
+}
