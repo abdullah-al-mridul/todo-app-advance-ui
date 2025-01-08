@@ -126,7 +126,7 @@ const Layout = ({
           <Link
             to="/account"
             className="flex items-center space-x-3 px-4 py-3 text-text-primary hover:bg-dark-700/50 transition-colors"
-            onClick={handleProfileClick}
+            onClick={handleMenuClose}
           >
             <svg
               className="w-5 h-5"
