@@ -17,24 +17,6 @@ export const useWindowDimensions = () => {
     document.documentElement.style.setProperty("--vh", `${vh}px`);
     document.documentElement.style.setProperty("--app-height", `${vh}px`);
     document.documentElement.style.setProperty("--app-width", `${vw}px`);
-
-    // Console log the dimensions
-    console.log("Window Dimensions Updated:", {
-      width: vw,
-      height: vh,
-      cssVariables: {
-        "--vw": `${vw}px`,
-        "--vh": `${vh}px`,
-        "--app-height": `${vh}px`,
-        "--app-width": `${vw}px`,
-      },
-      screen: {
-        innerWidth: window.innerWidth,
-        innerHeight: window.innerHeight,
-        clientWidth: document.documentElement.clientWidth,
-        clientHeight: document.documentElement.clientHeight,
-      },
-    });
   };
 
   useEffect(() => {
